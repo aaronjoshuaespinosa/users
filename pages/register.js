@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import Link from "next/link";
+import { useState } from 'react';
 
 const Register = () => {
     const [value, setValue] = useState({
@@ -20,8 +20,6 @@ const Register = () => {
             })
         }).then((response) => {
             return response.json()
-        }).then((res) => {
-            console.log(res)
         })
     }
 

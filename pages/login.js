@@ -6,8 +6,19 @@ const Login = () => {
         username: "",
         password: "",
     })
+
     const handleFetch = () => {
-        console.log(value)
+        fetch("/api/login", {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify({
+                value: value
+            })
+        }).then((response) => {
+            return response.json()
+        })
     }
 
     const handleChange = (e) => {

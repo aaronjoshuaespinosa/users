@@ -1,25 +1,6 @@
-export default function login() {
-    return (
-        <div>
-            Enter
-        </div>
-    );
-}
+export default function handler(req, res) {
 
-export async function getStaticPaths() {
-
-
-    return {
-        paths:[],
-        fallback:false
-    }
-}
-export async function getStaticProps(ctx){
-
-
-    return {
-        props:{
-            data:null
-        }
-    }
+    const { value } = req.body
+    console.log(value)
+    res.status(200).json({ value })
 }
