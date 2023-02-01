@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from 'react';
 
@@ -28,6 +29,7 @@ const Register = () => {
     }
     return (
         <>
+        <Head><title>register</title></Head>
             <div className="w-full h-screen flex flex-col justify-center items-center gap-y-10 text-black">
                 {/* title */}
                 <div className="flex flex-col items-center">

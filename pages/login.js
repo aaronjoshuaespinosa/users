@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ const Login = () => {
     }
     return (
         <>
+        <Head><title>login</title></Head>
             <div className="w-full h-screen flex flex-col justify-center items-center gap-y-10 text-black">
                 <div className="flex flex-col items-center">
                     <p className="font-bold text-4xl">//try login</p>
